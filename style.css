@@ -1,0 +1,60 @@
+* {
+    padding: 0px;
+    border : 0px;
+    margin :0px;
+    box-sizing: border-box;
+}
+
+body {
+    /* width: 100vw;
+    height: 100vh; */
+}
+
+main {
+    margin:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 95vh;
+}
+
+.page {
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#page0 {
+    flex-grow: 1;
+    background-color: khaki;
+}
+
+#page1 {
+    flex-grow: 1;
+    background-color: lightblue;
+    
+}
+
+#page2 {
+    flex-grow: 1;
+    background-color:lightsteelblue;
+    
+}
+
+#page3 {
+    flex-grow: 1;
+    background-color:olive;
+    
+}
+
+.expand{
+    flex-grow: 20 !important;
+}
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
