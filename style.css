@@ -49,7 +49,7 @@ main {
 }
 
 .expand{
-    flex-grow: 20 !important;
+    flex-grow: 5 !important;
 }
 
 img {

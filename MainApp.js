@@ -8,6 +8,7 @@ export default class MainApp extends HTMLElement {
         super();
         this.pages = new Array();
         this.index = -1;
+        this.pathname = new URL(window.location.href).pathname;
         this.render();
         this.router();
     }
@@ -29,10 +30,10 @@ export default class MainApp extends HTMLElement {
 
     router(idx, evt){
         if(!evt){
-            history.replaceState({},'Home','/root/');
+            history.replaceState({},'Home',this.pathname+'root/');
             this.updateMain(-1);
         } else {
-            history.pushState({idx:idx},'Home',`/root/page/${idx}`);
+            history.pushState({idx:idx},'Home',this.pathname + `root/page/${idx}`);
             this.updateMain(idx);
         }
     }
